@@ -9,15 +9,9 @@ tratim = 0
 score = 0
 
 def new_picture():
-    k = random.randint(1, 4)
-    if k == 1:
-        return pic1
-    elif k == 2:
-        return pic2
-    elif k == 3:
-        return pic3
-    else:
-        return pic4
+    k = random.randint(0, 7)
+    list_pic = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8]
+    return list_pic[k]
 
 def click():
     global tratim, score
@@ -39,6 +33,10 @@ pic1 = tkinter.PhotoImage(file="seven.png")
 pic2 = tkinter.PhotoImage(file="almaz.png")
 pic3 = tkinter.PhotoImage(file="limon.png")
 pic4 = tkinter.PhotoImage(file="hear.png")
+pic5 = tkinter.PhotoImage(file="happy.png")
+pic6 = tkinter.PhotoImage(file="sherry.png")
+pic7 = tkinter.PhotoImage(file="ding.png")
+pic8 = tkinter.PhotoImage(file="melon.png")
 
 #сделать три кнопки
 button1 = tkinter.Button(image=pic1)
